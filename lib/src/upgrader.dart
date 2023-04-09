@@ -774,7 +774,7 @@ class Upgrader {
     }
 
     if (doProcess) {
-      _sendUserToAppStore();
+      sendUserToAppStore();
     }
 
     if (shouldPop) {
@@ -830,7 +830,7 @@ class Upgrader {
     return true;
   }
 
-  void _sendUserToAppStore() async {
+  void sendUserToAppStore() async {
     if (_appStoreListingURL == null || _appStoreListingURL!.isEmpty) {
       if (debugLogging) {
         print('upgrader: empty _appStoreListingURL');
